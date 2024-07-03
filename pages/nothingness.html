@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        class MyHeader extends HTMLElement {
+            connectedCallback() {
+                const template = document.getElementById('main-header').content;
+                const shadowRoot = this.attachShadow({mode: 'open'});
+                shadowRoot.appendChild(template.cloneNode(true));
+            }
+        }
+        customElements.define('my-header', MyHeader);
+    </script>
+</head>
+<body>
+    <my-header></my-header>
+</body>
+</html>
