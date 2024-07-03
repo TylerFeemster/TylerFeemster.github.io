@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple: #45214a;
+    --navy: #323050;
+    --blue: #21445b;
+    --sea: #1a6566;
+    --green: #5d8a66;
+
+    --black: #333333;
+    --gray: #777777;
+    --white: #dddddd;
+
+    --text-color: var(--white);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(0deg, var(--black), var(--sea));
+    color: var(--text-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header {
+    font-size: 1.5rem;
+    padding: 2%;
+    display: grid;
+    justify-content: left;
+}
+.main-header {
+    display: grid;
+    justify-content: stretch;
+}
+.title-div {
+    display: grid;
+    justify-content: center;
+}
+.header-links {
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: large;
+    font-style: italic;
+}
+h3 {
+    font-size: 125%;
+    font-weight: 400;
+    font-variant: small-caps;
+}
+
+.link-button {
+    background: rgba(0, 0, 0, 0); /* zero opacity */
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    /* transition: all 0.3s ease; */
+}
+
+.link-button:hover {
+    opacity: 0.3;
+    transition: 0.3s ease;
+}
+.link-button:focus {
+    opacity: 0;
+    transition: 0.2s;
+}
+
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+form input, form button {
+    padding: 0.5rem;
+    color: var(--gray);
+    font-size: 1.5rem;
+    border: 0;
+    background: var(--text-color);
+}
+
+form button {
+    color: var(--text-color);
+    background: var(--sea);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: var(--text-color);
+    color: var(--navy);
+}
+
+/* todo stuff */
+.todo {
+    padding: 1%;
+    display: grid;
+    justify-content: center;
+}
+.todo-item {
+    font-size: large;
+}
+.button-div {
+    display: flex;
+    justify-content: space-around;
+}
+.complete-button {
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--green);
+    cursor: pointer;
+}
+.complete-button:hover {
+    opacity: 0.3;
+    transition: all 0.3s ease;
+}
