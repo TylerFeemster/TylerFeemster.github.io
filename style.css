@@ -4,18 +4,19 @@
 }
 
 :root {
-  /* using these for interactivity */
+  /* main colors          */
+  --black: #191919;
+  --gray: #999999;
+  --white: #eeeeee;
+  /* -------------------- */
+
+  /* interactivity colors */
   --purple: #45214a;
   --navy: #323050;
   --blue: #21445b;
   --sea: #1a6566;
   --green: #5d8a66;
-  /* ----------------------------- */
-  /* main colors */
-  --black: #111111;
-  --gray: #999999;
-  --white: #eeeeee;
-  /* ----------- */
+  /* -------------------- */
 
   --background-color: var(--black);
   --text-color: var(--white);
@@ -49,23 +50,32 @@ h3 {
 
 /* Header */
 header {
-  height: 8vh;
+  height: 8vh; /* 8/100 */
   display: flex;
   justify-content: space-between;
 }
 .header-name {
+  padding-left: 2vw;
+
   display: grid;
-  justify-content: center;
+  justify-content: left;
   align-content: center;
+
+  text-decoration: none;
+  color: var(--text-color);
 
   font-size: x-large;
   font-weight: 150;
-  width: 30%;
+  width: 200px;
 }
 .header-links {
-  width: 60%;
+  padding-right: 2vw;
+
+  width: clamp(30vw, 80vw, 250px); 
+  /* min, max, optimal (adjust min/optimal when adding) */
+
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: center;
 }
 .header-links a {
@@ -91,4 +101,22 @@ header {
 }
 .link-button:focus {
   opacity: 0;
+}
+
+/* Body */
+.home-body {
+  height: 88vh; /*  8 + _88_ + 4 / 100  */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer */
+footer {
+  font-size: small;
+  font-weight: 100;
+  height: 4vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }

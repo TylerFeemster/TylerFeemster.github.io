@@ -4,8 +4,7 @@ const headerList = document.querySelector(".header-links");
 const info = {
   "Philosophy": "./ph.html",
   "Mathematics": "./ma.html",
-  "Software": "./",
-  "About": "./index.html",
+  "About": "./ab.html",
 };
 
 for (let key in info) {
