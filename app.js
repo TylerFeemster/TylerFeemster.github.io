@@ -1,37 +1,25 @@
-// Selectors
-const todoInput = document.querySelector(".todo-input");
-const todoButton = document.querySelector(".todo-button");
-const todoList = document.querySelector(".todo-container");
+// Add Header Info
+const headerList = document.querySelector(".header-links");
+
+const info = {
+  "Philosophy": "./ph.html",
+  "Mathematics": "./ma.html",
+  "Software": "./",
+  "About": "./index.html",
+};
+
+for (let key in info) {
+  const link = document.createElement("a");
+  link.setAttribute("href", info[key]);
+  link.classList.add("link-button");
+
+  const h3 = document.createElement("h3");
+  h3.innerText = key;
+  link.appendChild(h3);
+
+  headerList.appendChild(link);
+}
 
 // Event Listeners
-todoButton.addEventListener("click", addTodo);
 
-// Functions
-function addTodo(event) {
-  event.preventDefault();
-
-  const todoDiv = document.createElement("div");
-  todoDiv.classList.add("todo");
-
-  const newTodo = document.createElement("div");
-  newTodo.innerText = "Heyo, this is a task.";
-  newTodo.classList.add("todo-item");
-
-  todoDiv.appendChild(newTodo);
-
-  const buttonDiv = document.createElement("div");
-  buttonDiv.classList.add("button-div");
-
-  const completedButton = document.createElement("button");
-  completedButton.innerHTML = "<h3>Check</h3>";
-  completedButton.classList.add("complete-button");
-  buttonDiv.appendChild(completedButton);
-
-  const trashButton = document.createElement("button");
-  trashButton.innerHTML = "<h3>Trash</h3>";
-  trashButton.classList.add("complete-button");
-  buttonDiv.appendChild(trashButton);
-
-  todoDiv.append(buttonDiv);
-  todoList.appendChild(todoDiv);
-}
+// Function

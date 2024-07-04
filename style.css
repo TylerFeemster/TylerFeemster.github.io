@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* using these for interactivity */
+  --purple: #45214a;
+  --navy: #323050;
+  --blue: #21445b;
+  --sea: #1a6566;
+  --green: #5d8a66;
+  /* ----------------------------- */
+  /* main colors */
+  --black: #111111;
+  --gray: #999999;
+  --white: #eeeeee;
+  /* ----------- */
+
+  --background-color: var(--black);
+  --text-color: var(--white);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+h1 {
+  font-size: x-large;
+  font-weight: 200;
+}
+h2 {
+  font-weight: 200;
+  font-size: large;
+  font-style: italic;
+}
+h3 {
+  font-size: medium;
+  font-weight: 200;
+}
+
+/* Header */
+header {
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+}
+.header-name {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  font-size: x-large;
+  font-weight: 150;
+  width: 30%;
+}
+.header-links {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+.header-links a {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+}
+
+.link-button {
+  background: rgba(0, 0, 0, 0); /* zero opacity */
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  /* transition: all 0.3s ease; */
+}
+
+.link-button:hover {
+  opacity: 0.2;
+  transition: 0.2s ease;
+}
+.link-button:focus {
+  opacity: 0;
+}
