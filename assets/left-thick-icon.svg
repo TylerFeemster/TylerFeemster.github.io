@@ -1,0 +1,6 @@
+<svg width="80" height="100" xmlns="http://www.w3.org/2000/svg">
+
+  <path d="M 60,0 L 60,100" stroke="white" fill="transparent" stroke-width="4"/>
+  <path d="M 37.5,50 a 10,10 0 0 0 -10,-32 a 20,20 0 0 0 20,64 a 10,10 0 0 1 -10,-32" stroke="white" fill="transparent" stroke-width="4"/>
+
+</svg>
