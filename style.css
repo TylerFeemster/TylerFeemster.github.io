@@ -114,6 +114,7 @@ header {
   display: flex;
 }
 .header-name img {
+  align-content: center;
   height: 4vh;
 }
 .header-name a {
