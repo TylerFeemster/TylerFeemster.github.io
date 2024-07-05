@@ -117,6 +117,7 @@ header {
   height: 4vh;
 }
 .header-name a {
+  align-content: center;
   text-decoration: none;
   padding-left: 2vw;
   color: var(--text-color);
