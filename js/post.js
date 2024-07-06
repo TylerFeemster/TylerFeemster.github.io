@@ -1,6 +1,6 @@
 
 const body = document.querySelector(".body-template");
-const url = "../ph/post1.yaml";
+const url = "./ph/post1.yaml";
 
 dataFromFile(url).then((data) => {
     dataFromURL = data;
@@ -46,7 +46,7 @@ function createHTML(title, description, text) {
     p.innerText = text;
 
     for (let child of [h1, h2, p]) {
-        child.classList.add("body-template");
+        child.classList.add("body-text");
         body.appendChild(child);
     }
 }

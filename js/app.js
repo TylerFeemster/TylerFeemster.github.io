@@ -15,3 +15,17 @@ async function extractTemplate(element, filepath) {
   }
   reader.readAsText(blob);
 };
+
+const bodyMain = document.querySelector(".body-template");
+bodyMain.addEventListener("scroll", () => {
+  const nameHeader = document.querySelector(".header-name");
+
+  if (bodyMain.scrollTop > 0) {
+    if (!nameHeader.classList.replace('header-large', 'header-small')) {
+      nameHeader.classList.add('header-small');
+    };
+  }
+  else {
+    nameHeader.classList.replace('header-small', 'header-large');
+  }
+})
