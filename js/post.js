@@ -1,5 +1,5 @@
 const body = document.querySelector(".body-template");
-const url = "../TFFE.html";
+const url = "../posts/ArgumentOutline.html";
 
 loadHtmlFile(url);
 

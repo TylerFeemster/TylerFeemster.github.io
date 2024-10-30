@@ -188,16 +188,17 @@ header {
   justify-content: center;
   align-items: center;
 
-  overflow-y: scroll;
 }
 /* div containing post html */
 .body-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 15px;
   align-items: center;
+  gap: 15px;
   color: var(--writing-color);
+
+  overflow-y: scroll; /* moved from body-template */
 }
 .body-text h1 {
   font-size: 50px;
