@@ -177,20 +177,19 @@ header {
   align-content: center;
 }
 
-/* post text */
+/* body for post div */
 .body-template {
-  height: 92vh;
+  height: calc(100vh - 50px); /* header is 50px */
   width: 80%;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 0%;
-  padding-bottom: 0%;
+  padding: 0;
+  margin: 0;
 
   display: grid;
   justify-content: center;
 
   overflow-y: scroll;
 }
+/* div containing post html */
 .body-text {
   display: flex;
   flex-direction: column;
