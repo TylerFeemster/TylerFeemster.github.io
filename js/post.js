@@ -9,7 +9,10 @@ async function loadHtmlFile(filepath) {
     const response = await fetch(filepath);
     if (response.ok) {
       const htmlContent = await response.text();
-      body.innerHTML = htmlContent;
+      const newDiv = document.createElement('div');
+      newDiv.className = 'body-text';
+      newDiv.innerHTML = htmlContent;
+      body.appendChild(newDiv);
     } else {
       console.error("Failed to load HTML file: ", response.status);
     }

@@ -191,30 +191,27 @@ header {
 
   overflow-y: scroll;
 }
-.body-template {
+.body-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
   align-content: center;
-  margin: 0;
-  padding-top: 2%;
-  padding-bottom: 2%;
   color: var(--writing-color);
 }
-.body-template h1 {
+.body-text h1 {
   font-size: xx-large;
   font-weight: 400;
 }
-.body-template h2 {
+.body-text h2 {
   font-size: x-large;
   font-weight: 300;
 }
-.body-template h3 {
+.body-text h3 {
   font-size: large;
   font-weight: 300;
 }
-.body-template p {
+.body-text p {
   font-size: medium;
   font-weight: 200;
 }
