@@ -179,9 +179,15 @@ header {
 
 /* body for post div */
 .body-template {
-  height: calc(100vh - 50px - 20%); /* header is 50px */
-  width: 80%;
-  padding: 10%;
+  /* 100vh - 20vh - 50px; header is 50px */
+  height: calc(80vh - 50px);
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+
+  width: 80vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+
   margin: 0;
 
   display: grid;
@@ -198,6 +204,8 @@ header {
   align-items: center;
   gap: 15px;
   color: var(--writing-color);
+  padding: 0;
+  margin: 0;
 }
 .body-text h1 {
   font-size: 50px;
