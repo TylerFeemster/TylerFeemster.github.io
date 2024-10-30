@@ -200,12 +200,19 @@ header {
   color: var(--writing-color);
 }
 .body-text h1 {
-  font-size: larger;
+  font-size: xx-large;
+  font-weight: 400;
 }
 .body-text h2 {
-  font-size: medium;
+  font-size: x-large;
+  font-weight: 300;
+}
+.body-text h3 {
+  font-size: large;
+  font-weight: 300;
 }
 .body-text p {
-  font-size: x-large;
+  font-size: medium;
+  font-weight: 200;
 }
 /* -------------------- */
