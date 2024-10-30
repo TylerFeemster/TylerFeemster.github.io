@@ -191,7 +191,7 @@ header {
 
   overflow-y: scroll;
 }
-.body-text {
+.body-template {
   display: grid;
   justify-content: center;
   align-content: center;
@@ -199,19 +199,19 @@ header {
   padding-bottom: 2%;
   color: var(--writing-color);
 }
-.body-text h1 {
+.body-template h1 {
   font-size: xx-large;
   font-weight: 400;
 }
-.body-text h2 {
+.body-template h2 {
   font-size: x-large;
   font-weight: 300;
 }
-.body-text h3 {
+.body-template h3 {
   font-size: large;
   font-weight: 300;
 }
-.body-text p {
+.body-template p {
   font-size: medium;
   font-weight: 200;
 }
