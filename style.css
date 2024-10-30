@@ -181,11 +181,12 @@ header {
 .body-template {
   height: calc(100vh - 50px); /* header is 50px */
   width: 80%;
-  padding: 0;
+  padding: 10%;
   margin: 0;
 
   display: grid;
   justify-content: center;
+  align-items: center;
 
   overflow-y: scroll;
 }
@@ -194,24 +195,24 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
   color: var(--writing-color);
 }
 .body-text h1 {
-  font-size: xx-large;
-  font-weight: 400;
+  font-size: 50px;
+  font-weight: 500;
 }
 .body-text h2 {
-  font-size: x-large;
-  font-weight: 300;
+  font-size: 40px;
+  font-weight: 400;
 }
 .body-text h3 {
-  font-size: large;
+  font-size: 30px;
   font-weight: 300;
 }
 .body-text p {
-  font-size: medium;
+  font-size: 20px;
   font-weight: 200;
 }
 /* -------------------- */
