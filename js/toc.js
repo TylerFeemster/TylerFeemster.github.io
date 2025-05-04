@@ -13,6 +13,14 @@ async function loadHtmlFile(filename) {
       newDiv.innerHTML = htmlContent;
       postContent.innerHTML = '';
       postContent.appendChild(newDiv);
+      renderMathInElement(postContent, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "$", right: "$", display: false },
+          { left: "\\(", right: "\\)", display: false },
+          { left: "\\[", right: "\\]", display: true },
+        ],
+      });
     } else {
       console.error("Failed to load HTML file: ", response.status);
     }

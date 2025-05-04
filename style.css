@@ -135,7 +135,7 @@ header {
   left: 270px;
 }
 .header-small a {
-  transition: letter-spacing 0.1s linear, opacity 0.1s linear/*, width 0.07s linear*/;
+  transition: letter-spacing 0.1s linear, opacity 0.1s linear;
   letter-spacing: 0px;
   opacity: 0;
   /*width: 0px;*/
