@@ -198,6 +198,26 @@ header {
 
   overflow-y: scroll;
 }
+/* toc */
+#writing-title {
+  text-align: center;
+}
+.toc {
+  display: flex;
+}
+.toc-item {
+  margin: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+.toc-item:hover {
+  opacity: 0.3;
+  transition: 0.2s ease;
+}
+.toc-item:focus{
+  opacity: 0.1;
+}
+
 /* div containing post html */
 .body-text {
   display: flex;
