@@ -75,7 +75,7 @@ header {
 }
 .header-name {
   padding: 10px;
-  width: 290px;
+  width: 250px;
   display: flex;
   justify-content: space-between;
 }
@@ -91,17 +91,15 @@ header {
   left: 10px;
 }
 #icon-right {
-  left: 270px;
+  left: 230px;
 }
 .header-name a {
   position: absolute;
   left: 40px;
   height: 30px;
-  width: 230px;
+  width: 190px;
   text-align: center;
   text-decoration: none;
-  letter-spacing: 4px;
-  font-variant: small-caps;
   color: var(--text-color);
   white-space: nowrap;
   font-size: x-large;
@@ -114,7 +112,8 @@ header {
   /* min, max, optimal (adjust min/optimal when adding) */
 
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
+  gap: 2vw;
   align-content: center;
 }
 .header-links a {
@@ -126,14 +125,14 @@ header {
 /* header animations */
 .header-large a {
   transition: letter-spacing 0.15s 0.15s linear, opacity 0.15s 0.15s linear/*, width 2s linear*/;
-  letter-spacing: 4px;
   opacity: 1;
+  letter-spacing: 0.5px;
   pointer-events: auto;
   /*width: 210px;*/
 }
 .header-large #icon-right {
   transition: left 0.3s ease;
-  left: 270px;
+  left: 230px;
 }
 .header-small a {
   transition: letter-spacing 0.1s linear, opacity 0.1s linear;
@@ -153,6 +152,7 @@ header {
   color: var(--text-color);
   margin: 0;
   border: 0;
+  letter-spacing: 0.5px;
   cursor: pointer;
 }
 
